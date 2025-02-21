@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.19;
+
+contract CountNft
+{
+    uint256 public NumberofNFT;
+
+    function checkTotalNft() public view returns(uint256){
+        return NumberofNFT;
+    }
+    function addNft() public {
+        NumberofNFT += 1;
+    }
+
+    function deleteNft() public 
+    {
+        NumberofNFT = NumberofNFT - 1;
+    }
+}

@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^ 0.8.19;
+
+contract First
+{
+    string public Hello;
+    uint256 public FavNumber;
+    string public Name;
+    //constructor to passed and gave to variable
+    constructor(string memory _hello, uint256 _no)
+    {
+    Hello = _hello;
+    FavNumber = _no;
+    }
+    //Used Function to add by passing an argument
+    function addInfo(string memory _name ) public {
+        Name = _name;
+    }
+}
